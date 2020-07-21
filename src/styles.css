@@ -1,0 +1,26 @@
+.window {
+    display: flex;
+    justify-content: center;
+}
+.header {
+    display: flex;
+    width: 100%;
+    max-width: 1300px;
+    justify-content: center;
+    align-items: center;
+}
+.menu {
+    margin-left: 10%;
+    margin-right: 15%;
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+.sign {
+    display: flex;
+    min-width: 320px;
+    justify-content: space-between;
+    align-items: center;
+}
+@import url(https://fonts.googleapis.com/css2?family=Heebo:wght@700&family=Lato:wght@400;700&display=swap)
+
