@@ -1,12 +1,9 @@
 import React from 'react';
-
-import Header from './features'
+import {MainSection} from './sections';
 
 function App() {
   return (
-    <div className="window">
-      <Header/>
-    </div>
+    <MainSection/>
   );
 }
 

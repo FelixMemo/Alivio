@@ -1,27 +1,33 @@
 import React from 'react';
 
 import styled from "styled-components";
-import { space, fontSize, fontFamily, width, height, color } from "styled-system";
+import { fontSize, fontFamily, color, margin, fontWeight } from "styled-system";
 
 export const LogoBox = styled.button`
   ${color}
   ${fontSize}
   ${fontFamily}
+  ${margin}
+  ${fontWeight}
   &:hover {
     opacity: ${props => props.opacityHover || 0.5};
   }
 `;
 
 const logoStyles = {
+  display: 'flex',
   color: "#01996D",
   fontSize: "24px",
-  fontFamily: "'Heebo', sans-serif",
+  
+  marginTop: '16px',
+  fontWeight: 'bold'
 };
 
 
-export default function Logo (props) {
+export function Logo (props) {
   const stylesToUse = {...logoStyles, ...props.styles};
   return(
     <a href="index.html"><logoBox style={{...stylesToUse}}>Alivio</logoBox></a>
-  )
-} ;
+  );
+};
+export default Logo;

@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "PT Serif";  
+    src: url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+     }
+
+
+a {
+    color: #292929;
+}

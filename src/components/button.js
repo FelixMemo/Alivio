@@ -27,9 +27,10 @@ const buttonStyles = {
 };
 
 
-export default function Button(props) {
-  const stylesToUse = {...buttonStyles, ...props.styles};
+export function Button(props) {
+  let stylesToUse = {...buttonStyles, ...props.styles};
   return(
     <ButtonBox style={{...stylesToUse}}>{props.text}</ButtonBox>
-  )
-} 
+  );
+};
+export default Button;
