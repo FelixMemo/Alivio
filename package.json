@@ -1,4 +1,5 @@
 {
+  "homepage": "http://FelixMemo.github.io/alivio",
   "name": "aliviogood",
   "version": "0.1.0",
   "private": true,
@@ -13,10 +14,12 @@
     "styled-system": "^5.1.5"
   },
   "scripts": {
-    "dev": "react-scripts start",
-    "start": "serve -s build",
+    "start": "react-scripts start",
     "build": "react-scripts build",
-    "heroku-postbuild": "npm run build"
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
